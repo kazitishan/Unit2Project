@@ -1,12 +1,12 @@
 LinearEquation class
 Instance Variables:
-private int xOne - This variable represents the first x-coordinate
-private int yOne - This variable represents the first y-coordinate
-private int xTwo - This variable represents the second x-coordinate
-private int yTwo - This variable represents the second y-coordinate
+private int x1 - This variable represents the first x-coordinate
+private int y1 - This variable represents the first y-coordinate
+private int x2 - This variable represents the second x-coordinate
+private int y2 - This variable represents the second y-coordinate
 
 Constructor
-public LinearEquation(int xOne, int yOne, int xTwo, int yTwo)
+public LinearEquation(int x1, int y1, int x2, int y2)
 Will set all instance variables to the parameters inputted (using this.xOne)
 
 Methods
@@ -20,13 +20,17 @@ returns the y-intercept of the instance
 private string slopeInterceptForm()
 returns the slope intercept form of the instance
 
-public void String toString()
+private double distance()
+returns the distance between the two points
+
+public String toString()
 This method will display all relevant information about this
 instance including:
 - X and Y coordinate information
 - Slope by calling slope()
-- y-intercept by calling yIntercept
+- y-intercept by calling yIntercept()
 - Slope Intercept Form equation by calling slopeInterceptForm()
+- Distance by calling distance()
 
 public String solvedCoordinatePoint(int xValue)
 returns the solved coordinate plane point based on the inputted x-value
