@@ -22,13 +22,13 @@ public class EquationRunner {
         LinearEquation slopeEquation = new LinearEquation(x1, y1, x2, y2);
 
         // Step 5: Print out the information of the instance
-        slopeEquation.toString();
+        System.out.println(slopeEquation.toString());
 
         // Step 6: Asking the user to input an x-value
         System.out.print("Enter an x-value: ");
         double xValue = s.nextDouble();
 
-        //
+        // Step 7: Printing out the solved coordinate
         String solvedCoordinatePoint = slopeEquation.solvedCoordinatePoint(xValue);
         System.out.println("Solved coordinate plane is: " + solvedCoordinatePoint);
     }
