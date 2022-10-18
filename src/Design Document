@@ -4,6 +4,8 @@ private int x1 - This variable represents the first x-coordinate
 private int y1 - This variable represents the first y-coordinate
 private int x2 - This variable represents the second x-coordinate
 private int y2 - This variable represents the second y-coordinate
+private int rise - Represents the amount in rise
+private int run - Represents the amount in run
 
 Constructor
 public LinearEquation(int x1, int y1, int x2, int y2)
