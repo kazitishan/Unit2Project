@@ -20,7 +20,8 @@ public class LinearEquation {
         rise = y2 - y1;
         run = x2 - x1;
         double slope = (double)rise / run;
-        slope = Math.round(slope);
+        slope = (int) (slope * 100);
+        slope = (double) (slope / 100);
         return slope;
     }
 
@@ -41,7 +42,8 @@ public class LinearEquation {
         int x = Math.abs(x2 - x1);
         int y = Math.abs(y2 - y1);
         double distance = Math.sqrt((x * x) + (y * y));
-        distance = Math.round(distance);
+        distance = (int) (distance * 100);
+        distance = (double) (distance / 100);
         return distance;
     }
 
