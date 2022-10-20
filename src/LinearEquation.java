@@ -20,15 +20,17 @@ public class LinearEquation {
         rise = y2 - y1;
         run = x2 - x1;
         double slope = (double)rise / run;
-        slope = (int) (slope * 100);
+        slope = Math.round(slope * 100);
         slope = (double) (slope / 100);
         return slope;
     }
 
-    private int yIntercept(){
+    private double yIntercept(){
         // y = mx + b
         // y1 = (slope() * x1) + yIntercept
-        int yIntercept = (int) (y1 - (slope() * x1));
+        double yIntercept = (y1 - (slope() * x1));
+        yIntercept = Math.round(yIntercept * 100);
+        yIntercept = (double) (yIntercept / 100);
         return yIntercept;
     }
 
@@ -42,7 +44,7 @@ public class LinearEquation {
         int x = Math.abs(x2 - x1);
         int y = Math.abs(y2 - y1);
         double distance = Math.sqrt((x * x) + (y * y));
-        distance = (int) (distance * 100);
+        distance = Math.round(distance * 100);
         distance = (double) (distance / 100);
         return distance;
     }
