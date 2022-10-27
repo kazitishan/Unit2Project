@@ -62,6 +62,8 @@ public class LinearEquation {
 
     public String solvedCoordinatePoint(double xValue){
         double yValue = (slope() * xValue) + yIntercept();
+        yValue = Math.round(yValue * 100);
+        yValue = (double) (yValue / 100);
         String solvedCoordinatePoint = ("(" + xValue + ", " + yValue + ")");
         return solvedCoordinatePoint;
     }
